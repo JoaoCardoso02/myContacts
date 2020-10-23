@@ -11,9 +11,9 @@ After that, do you need clone the code using and install the dependencies:
     git clone https://github.com/JoaoCardoso02/myContacts.git && cd myContacts
     cd backend && npm install
 
-		cd ..
+    cd ..
 
-		cd frontend && npm install
+    cd frontend && npm install
 ```
 
 OK, after that, it is necessary to start the project! Run on /backend and /frontend:
