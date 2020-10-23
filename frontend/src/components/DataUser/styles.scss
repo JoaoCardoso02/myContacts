@@ -1,0 +1,36 @@
+@import '../../assets/css/varibles';
+
+.my-data-content {
+  padding: 18% 18% 0 18%;
+  height: 100%;
+
+  h2 svg {
+    font-size: 1.5rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+  }
+
+  h2 svg:hover {
+    color: $color_red;
+  }
+
+  form {
+    .alterData.button-alter-password {
+      width: 45%;
+      button {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  
+    .alterData.button-finish {
+      width: 55%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .my-data-content {
+    padding: 18% 5% 0 5%;
+  }
+}

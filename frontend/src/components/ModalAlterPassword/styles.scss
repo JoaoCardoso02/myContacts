@@ -1,0 +1,15 @@
+@import '../../assets/css/varibles';
+
+.group-buttons-alter-password {
+
+  .div-button.confirm-alter-password {
+    width: 55%;
+  }
+
+  .confirm-alter-password {
+    button {
+      background: $color_green;
+    }
+  }
+
+}

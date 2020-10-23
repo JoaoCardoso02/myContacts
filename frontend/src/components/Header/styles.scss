@@ -1,0 +1,53 @@
+@import '../../assets/css/varibles';
+
+.header {
+  width: 100vw;
+  background: $color_lightBlue;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+
+  .title-main {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .perfil-icon {
+    position: relative;
+    svg {
+      font-size: 2rem;
+    }
+  }
+
+  .perfil-icon:hover .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu {
+    position: absolute;
+    background: #ccc;
+    padding: 1rem;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease;
+
+    ul {
+      list-style: none;
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 40%;
+  }
+}

@@ -1,0 +1,75 @@
+@import '../../assets/css/varibles';
+
+.input-field {
+  display: grid;
+  grid-template-rows: 1fr 1.2fr;
+  position: relative;
+  margin-top: 2rem;
+
+  
+  label {
+    margin-bottom: 0.5rem;
+    color: $color_label;
+    font-weight: 600;
+  }
+
+  input {
+    width: 100%;
+    align-self: center;
+    border: none;
+    height: 120%;
+    border-bottom: 3px solid $color_inputBorderColor;
+    color: $color_inputWithoutFocus;
+    outline: none;
+    padding: 0 0.5rem;
+    transition: 0.3s all ease;
+  }
+
+  input:focus {
+    color: $color_inputWithFocus
+  }
+
+  // Retirar setas do input number
+  input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+  }
+  input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+  }
+
+  // Cor de fundo do autocomplete
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+  }  
+
+  .error {
+    background: $color_red;
+    border-color: $color_red !important;
+  }
+
+  // Cor do texto do autocomplete
+  .error:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px $color_red inset;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .input-field {
+
+    margin-top: 1.3rem;
+
+    label {
+      margin: 0;
+    }
+
+    input {
+      margin-top: 0.6rem;
+      height: 120%;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@import '../../assets/css/varibles';
+
+.list-contacts-content {
+  padding: 18% 18% 0 18%;
+
+  h2 svg {
+    font-size: 1.5rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+  }
+
+  h2 svg:hover {
+    color: $color_green;
+  }
+
+  .list {
+    height: 50vh;
+    overflow-y: auto;
+    
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+      background: #F4F4F4;;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: #dad7d7;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 1rem;
+      padding: 0 0.5rem;
+
+      li {
+        margin-top: 1rem;
+
+        .data-contact-list {
+          background-color: $color_lightBlue;
+          border-radius: 12px;
+          padding: 1rem;
+          cursor: pointer;
+        }
+
+        .options {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .li-title, .li-data {
+        .data-contact-list, .div-titles {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          > * {
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          > :nth-child(1) {
+            text-align: start;
+          }
+          > :nth-child(2) {
+            text-align: center;
+          }
+          > :nth-child(3) {
+            text-align: end;
+          }
+        }
+      }
+
+      li:hover .options {
+        height: 60px;
+        transition: all 1s ease;
+        visibility: visible;
+        opacity: 1;
+        background: #dddcdc;
+        margin-top: 0.5rem;
+        border-radius: 12px;
+
+        svg {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      li .options {
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: all .6s ease;
+
+        svg {
+          font-size: 2.5rem;
+          visibility: hidden;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        .pencil {
+          color: $color_green;
+        }
+
+        .delete {
+          color: $color_red;
+        }
+      }
+    }
+
+    .li-title {
+      margin-top: 2rem;
+
+      > div {
+        padding: 0 1rem;
+        h3 {
+          font-size: 1.3rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .list-contacts-content {
+    padding: 18% 5% 0 5%;
+  }
+}

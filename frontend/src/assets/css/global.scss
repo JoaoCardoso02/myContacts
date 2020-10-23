@@ -1,0 +1,17 @@
+body, #root {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+input,
+button,
+textarea {
+  font: 400 1rem Poppins;
+}

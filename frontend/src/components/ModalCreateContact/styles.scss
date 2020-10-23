@@ -1,0 +1,15 @@
+@import '../../assets/css/varibles';
+
+.group-buttons-create-contact {
+
+  .div-button.confirm-create-contact {
+    width: 55%;
+  }
+
+  .confirm-create-contact {
+    button {
+      background: $color_green;
+    }
+  }
+
+}

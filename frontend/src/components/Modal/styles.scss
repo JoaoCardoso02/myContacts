@@ -1,0 +1,21 @@
+@import '../../assets/css/varibles';
+
+.container-modal {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #0002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content-modal {
+    padding: 4rem;
+    background: #f2f2fa;
+    border-radius: 12px;
+    border: 3px solid;
+
+    h2 { text-align: center; font-size: 1.3rem; font-weight: 500; }
+  }
+}
