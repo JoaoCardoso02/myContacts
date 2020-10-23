@@ -11,9 +11,9 @@ After that, do you need clone the code using and install the dependencies:
     git clone https://github.com/JoaoCardoso02/myContacts.git && cd myContacts
     cd backend && npm install
 
-		cd ..
+    cd ..
 
-		cd frontend && npm install
+    cd frontend && npm install
 ```
 
 It is necessary to create a table in a MySQL database called "myContacts" and create the tables with the SQL commands in the ./backend/src/database/sql folder.
