@@ -16,6 +16,8 @@ After that, do you need clone the code using and install the dependencies:
 		cd frontend && npm install
 ```
 
+It is necessary to create a table in a MySQL database called "myContacts" and create the tables with the SQL commands in the ./backend/src/database/sql folder.
+
 OK, after that, it is necessary to start the project! Run on /backend and /frontend:
 
 ```
